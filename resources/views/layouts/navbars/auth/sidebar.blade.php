@@ -4,8 +4,8 @@
         <i class="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute right-0 top-0 d-none d-xl-none"
             aria-hidden="true" id="iconSidenav"></i>
         <a class="navbar-brand m-0" href="{{ route('dashboard') }}">
-            <img src="../assets/img/logo-ct.png" class="navbar-brand-img h-100" alt="...">
-            <span class="ms-1 font-weight-bold">Soft UI Dashboard</span>
+            <img src="../assets/img/logoParaxute.png" class="navbar-brand-img h-100" alt="...">
+            <span class="ms-1 font-weight-bold">PARAXUTE MUSIC</span>
         </a>
     </div>
     <hr class="horizontal dark mt-0">
@@ -18,7 +18,7 @@
                         class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
                         <svg width="12px" height="12px" viewBox="0 0 45 40" version="1.1"
                             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <title>shop </title>
+                            <title>Página Principal </title>
                             <g id="Basic-Elements" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                                 <g id="Rounded-Icons" transform="translate(-1716.000000, -439.000000)" fill="#FFFFFF"
                                     fill-rule="nonzero">
@@ -50,7 +50,7 @@
                         class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
                         <svg width="12px" height="12px" viewBox="0 0 46 42" version="1.1"
                             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <title>customer-support</title>
+                            <title>Perfil</title>
                             <g id="Basic-Elements" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                                 <g id="Rounded-Icons" transform="translate(-1717.000000, -291.000000)" fill="#FFFFFF"
                                     fill-rule="nonzero">

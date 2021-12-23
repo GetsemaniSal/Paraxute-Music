@@ -114,7 +114,7 @@
                             </g>
                         </svg>
                     </div>
-                    <span class="nav-link-text ms-1">HOLAPOAOSAS</span>
+                    <span class="nav-link-text ms-1">Tables</span>
                 </a>
             </li>
             <li class="nav-item">
@@ -180,4 +180,5 @@
             </li>
         </ul>
     </div>
+    
 </aside>

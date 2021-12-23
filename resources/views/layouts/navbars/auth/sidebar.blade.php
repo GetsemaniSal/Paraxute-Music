@@ -114,7 +114,7 @@
                             </g>
                         </svg>
                     </div>
-                    <span class="nav-link-text ms-1">Tables</span>
+                    <span class="nav-link-text ms-1">Aulas</span>
                 </a>
             </li>
             <li class="nav-item">
@@ -142,7 +142,7 @@
                             </g>
                         </svg>
                     </div>
-                    <span class="nav-link-text ms-1">Billing</span>
+                    <span class="nav-link-text ms-1">Clases</span>
                 </a>
             </li>
             
@@ -175,7 +175,7 @@
                             </g>
                         </svg>
                     </div>
-                    <span class="nav-link-text ms-1">Profile</span>
+                    <span class="nav-link-text ms-1">Horarios</span>
                 </a>
             </li>
         </ul>

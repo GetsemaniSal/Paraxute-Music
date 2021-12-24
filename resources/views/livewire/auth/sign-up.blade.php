@@ -51,7 +51,6 @@
                                       class="text-dark font-weight-bolder">{{ __('Ingresa') }}</a>
                               </p>
                           </form>
-
                       </div>
                   </div>
               </div>

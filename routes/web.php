@@ -51,3 +51,6 @@ Route::middleware('auth')->group(function () {
     Route::get('/laravel-user-management', UserManagement::class)->name('user-management');
 });
 
+Route::get('/billing/index', Index::class)->name('index');
+
+

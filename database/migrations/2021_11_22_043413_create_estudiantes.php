@@ -84,7 +84,9 @@ class CreateEstudiantes extends Migration
             $table->string('codigo_Prog');
             $table->string('num_sesiones_mes');
             $table->string('costo_mensual');
-            $table->foreignId('id_formato_')->contrained('formato');                
+            $table->foreignId('id_formato_')->contrained('formato');   
+            
+            $table->timestamps();
         });
 
         

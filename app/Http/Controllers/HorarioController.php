@@ -1,11 +1,11 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
-use App\Models\Aula;
-use Illuminate\Support\Facades\aulas;
-class AulaController extends Controller
+use App\Models\Horario;
+use Illuminate\Support\Facades\horarios;
+
+class HorarioController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +14,8 @@ class AulaController extends Controller
      */
     public function index()
     {
-        $aulas = Aula:: all();
-        return view('aula.index')-> with('aulas', $aulas);//
+        $horarios = Horario:: all();
+        return view('horario.index')-> with('horarios', $horarios);//
     }
 
     /**
@@ -25,7 +25,7 @@ class AulaController extends Controller
      */
     public function create()
     {
-        return view('aula.create');//
+        return view('horario.create');//
     }
 
     /**
@@ -36,15 +36,15 @@ class AulaController extends Controller
      */
     public function store(Request $request)
     {
-        $aulas = new aula();
-        $aulas->name = $request->get('name');
-        $aulas->email = $request->get('email');
-        $aulas->role = $request->get('role');
-        $aulas->password = $request->get('password');
-        $aulas->phone = $request->get('phone');
-        $aulas->save();//
+        $horarios = new horario();
+        $horarios->name = $request->get('name');
+        $horarios->email = $request->get('email');
+        $horarios->role = $request->get('role');
+        $horarios->password = $request->get('password');
+        $horarios->phone = $request->get('phone');
+        $horarios->save();//
 
-        return redirect('/aulas');
+        return redirect('/horarios');
 
     }
 
@@ -67,8 +67,8 @@ class AulaController extends Controller
      */
     public function edit($id)
     {
-        $aulas = aula:: find($id);
-        return view('aula.edit')-> with('aulas', $aulas);//
+        $horarios = horario:: find($id);
+        return view('horario.edit')-> with('horarios', $horarios);//
 
     }
 
@@ -81,17 +81,16 @@ class AulaController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $aula = aula::find($id);
-        $aula->name = $request->get('name');
-        $aula->email = $request->get('email');
-        $aula->role = $request->get('role');
-        $aula->password = $request->get('password');
-        $aula->phone = $request->get('phone');
-        $aula->save();//
+        $horario = horario::find($id);
+        $horario->name = $request->get('name');
+        $horario->email = $request->get('email');
+        $horario->role = $request->get('role');
+        $horario->password = $request->get('password');
+        $horario->phone = $request->get('phone');
+        $horario->save();//
 
-        return redirect('/aulas');//
+        return redirect('/horarios');//
 
-        
     
     }
 
@@ -103,8 +102,8 @@ class AulaController extends Controller
      */
     public function destroy($id)
     {
-        $aulas = aula:: find($id);
-        $aulas->delete();
-        return redirect('/aulas');//
+        $horarios = horario:: find($id);
+        $horarios->delete();
+        return redirect('/horarios');//
     }
 }

@@ -2,10 +2,12 @@
 
 namespace App\Http\Controllers;
 
+
 use Illuminate\Http\Request;
-use App\Models\Aula;
-use Illuminate\Support\Facades\aulas;
-class AulaController extends Controller
+use App\Models\Clase;
+use Illuminate\Support\Facades\clases;
+
+class ClaseController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +16,8 @@ class AulaController extends Controller
      */
     public function index()
     {
-        $aulas = Aula:: all();
-        return view('aula.index')-> with('aulas', $aulas);//
+        $clases = Clase:: all();
+        return view('clase.index')-> with('clases', $clases);//
     }
 
     /**
@@ -25,7 +27,7 @@ class AulaController extends Controller
      */
     public function create()
     {
-        return view('aula.create');//
+        return view('usuario.create');//
     }
 
     /**
@@ -36,15 +38,20 @@ class AulaController extends Controller
      */
     public function store(Request $request)
     {
-        $aulas = new aula();
-        $aulas->name = $request->get('name');
-        $aulas->email = $request->get('email');
-        $aulas->role = $request->get('role');
-        $aulas->password = $request->get('password');
-        $aulas->phone = $request->get('phone');
-        $aulas->save();//
+        $clases = new Usuario();   
+        $clases->tipo_programa = $request->get('tipo_programa');
+        $clases->codigo_Prog = $request->get('codigo_Prog');
+        $clases->num_sesiones_mes = $request->get('num_sesiones_mes');
 
-        return redirect('/aulas');
+     ;
+     
+        $clases->save();//
+
+
+        $table->string('tipo_programa');
+         
+
+        return redirect('/usuarios');
 
     }
 
@@ -67,8 +74,8 @@ class AulaController extends Controller
      */
     public function edit($id)
     {
-        $aulas = aula:: find($id);
-        return view('aula.edit')-> with('aulas', $aulas);//
+        $clases = Usuario:: find($id);
+        return view('usuario.edit')-> with('usuarios', $clases);//
 
     }
 
@@ -81,15 +88,15 @@ class AulaController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $aula = aula::find($id);
-        $aula->name = $request->get('name');
-        $aula->email = $request->get('email');
-        $aula->role = $request->get('role');
-        $aula->password = $request->get('password');
-        $aula->phone = $request->get('phone');
-        $aula->save();//
+        $usuario = Usuario::find($id);
+        $usuario->name = $request->get('name');
+        $usuario->email = $request->get('email');
+        $usuario->role = $request->get('role');
+        $usuario->password = $request->get('password');
+        $usuario->phone = $request->get('phone');
+        $usuario->save();//
 
-        return redirect('/aulas');//
+        return redirect('/usuarios');//
 
         
     
@@ -103,8 +110,8 @@ class AulaController extends Controller
      */
     public function destroy($id)
     {
-        $aulas = aula:: find($id);
-        $aulas->delete();
-        return redirect('/aulas');//
+        $clases = Usuario:: find($id);
+        $clases->delete();
+        return redirect('/usuarios');//
     }
 }

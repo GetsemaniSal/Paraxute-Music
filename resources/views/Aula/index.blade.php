@@ -65,9 +65,9 @@
                 <div class="card-header pb-0">
                     <div class="d-flex flex-row justify-content-between">
                         <div>
-                            <h5 class="mb-0">Usuarios</h5>
+                            <h5 class="mb-0">Aulas</h5>
                         </div>
-                        <a href="usuarios/create" class="btn bg-gradient-primary btn-sm mb-0" type="button">+&nbsp; Nuevo Usuario</a>
+                        <a href="aulas/create" class="btn bg-gradient-primary btn-sm mb-0" type="button">+&nbsp; Nueva Aula</a>
                     </div>
                 </div>
                 <div class="card-body px-0 pt-0 pb-2">
@@ -99,31 +99,31 @@
                                 </tr>
                                             </thead>
                             <tbody>
-                            @foreach ($usuarios as $usuario)
+                            @foreach ($aulas as $aula)
                                 <tr>
                                     <td class="ps-4">
-                                        <p class="text-xs font-weight-bold mb-0">{{$usuario->id}}</p>
+                                        <p class="text-xs font-weight-bold mb-0"></p>
                                     </td>
                                     <td>
                                         <div>
-                                        <p class="text-xs font-weight-bold mb-0">{{$usuario->name}}</p>
+                                        <p class="text-xs font-weight-bold mb-0">}</p>
                                         </div>
                                     </td>
                                     <td class="text-center">
-                                        <p class="text-xs font-weight-bold mb-0">{{$usuario->email}}</p>
+                                        <p class="text-xs font-weight-bold mb-0"></p>
                                     </td>
                                     <td class="text-center">
-                                        <p class="text-xs font-weight-bold mb-0">{{$usuario->role}}</p>
+                                        <p class="text-xs font-weight-bold mb-0"></p>
                                     </td>
                                     <td class="text-center">
-                                        <p class="text-xs font-weight-bold mb-0">{{$usuario->password}}</p>
+                                        <p class="text-xs font-weight-bold mb-0">}</p>
                                     </td>
                                     <td class="text-center">
-                                        <span class="text-secondary text-xs font-weight-bold">{{$usuario->phone}}</span>
+                                        <span class="text-secondary text-xs font-weight-bold"></span>
                                     </td>
                                     <td class="text-center">
-                                      <form action="{{ route('usuarios.destroy',$usuario->id) }}" method="POST">
-                                        <a href="/usuarios/{{$usuario->id}}/edit" class="mx-3" data-bs-toggle="tooltip"
+                                      <form action="{{ route('aulas.destroy',$aula->id) }}" method="POST">
+                                        <a href="/aulas/{{$aula->id}}/edit" class="mx-3" data-bs-toggle="tooltip"
                                             data-bs-original-title="Edit user">
                                             @csrf
                                             @method('DELETE')

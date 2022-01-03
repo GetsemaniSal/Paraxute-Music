@@ -43,10 +43,7 @@
                 </li>
             </ul>
             <ul class="navbar-nav d-lg-block d-none">
-                <li class="nav-item">
-                    <a href="https://www.creative-tim.com/product/soft-ui-dashboard-laravel"
-                        class="btn btn-sm btn-round mb-0 me-1 bg-gradient-light" target="_blank">Free download</a>
-                </li>
+               
             </ul>
         </div>
     </div>

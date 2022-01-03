@@ -3,9 +3,7 @@
     @auth()
         {{-- If the user is authenticated on the static sign up or the sign up page --}}
         @if (in_array(request()->route()->getName(),['static-sign-up', 'sign-up'],))
-            @include('layouts.navbars.guest.sign-up')
-      
-            @include('layouts.footers.guest.with-socials')
+           
             {{-- If the user is authenticated on the static sign in or the login page --}}
         @elseif (in_array(request()->route()->getName(),['sign-in', 'login'],))
             @include('layouts.navbars.guest.login')
@@ -58,9 +56,6 @@
 
 </x-layouts.base>
 
-
-<!-- <div class="shadow-lg p-3 mb-5 bg-white rounded"><h3>Contenido de INDEX</h3></div> -->
-
 <div>
     <div class="row">
         <div class="col-12">
@@ -99,7 +94,6 @@
                                     <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
                                        Acciones
                                     </th>
-                                    
                                 </tr>
                                             </thead>
                             <tbody>
@@ -138,21 +132,11 @@
                                         </span>
                                       </form>
                                     </td>
-           
-        </td>   
-
-              
-
-
-                                    
                                 </tr>
                                
-                                
-                                </tr>
-                                @endforeach
+                              @endforeach
                             </tbody>
                         </table>
-
                     </div>
                 </div>
             </div>
